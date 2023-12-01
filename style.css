@@ -232,9 +232,15 @@ body {
 
 .project-img {
   width: 100%;
-  object-fit: none;
+  object-fit: cover;
   height: 100vh;
+  transition: transform 0.3s ease-in-out;
 }
+
+.project-img:hover {
+  transform: scale(1.2); /* Adjust the scale factor*/
+}
+
 
 .project {
   margin: 0 !important;
